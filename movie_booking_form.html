@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Form Styling</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin:0;
+        padding: 0;
+      }
+
+      body {
+        font-family: 'Raleway', sans-serif;
+        background-image: url("https://www.cmarix.com/blog/wp-content/uploads/2020/03/xEverything-About-Online-Movie-Ticket-Booking-App-and-Website-Development-02.png.pagespeed.ic.yma484xttU.webp");
+        color: #fff;
+        line-height: 1.8;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      #container {
+        margin: 30px auto;
+        max-width: 500px;
+        padding: 20px;
+      }
+
+      .form-wrap {
+        background: burlywood;
+        
+        padding: 15px 25px;
+        color: #333;
+      }
+
+      .form-wrap h1,
+      .form-wrap p {
+        text-align: center;
+      }
+
+      .form-wrap .form-group {
+        margin-top: 15px;
+      }
+
+      .form-wrap .form-group label {
+        display: block;
+        color: #666;
+      }
+
+      .form-wrap .form-group input {
+        width: 100%;
+        padding: 10px;
+        border: black 1px solid;
+        border-radius: 5px;
+      }
+
+      .form-wrap button {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        margin-top: 20px;
+        background: #49c1a2;
+        color: black;
+        cursor: pointer;
+      }
+
+      .form-wrap button:hover {
+        background: #37a08e
+      }
+
+
+      .form-wrap .bottom-text {
+        font-size: 13px;
+        margin-top: 20px;
+      }
+
+      footer {
+        text-align: center;
+        margin-top: 10px;
+      }
+
+      footer a {
+        color:#49c1a2
+      }
+      .Kewal{
+          display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div class="form-wrap">
+        <h1>Movie Booking</h1>
+        <p>A Break Is Always Needed</p>
+        <form>
+          <div class="form-group">
+            <label for="theater-name">Theater Name</label>
+            <input type="text" name="theaterName" id="theater-name" placeholder="Cineplex/Inox" />
+          </div>
+          <div class="form-group">
+            <label for="movie-name">Movie Name</label>
+            <input type="text" name="movieName" id="moveie-name" placeholder="Pushpa/Spiderman" />
+          </div>
+          <div class="form-group">
+            <label for="select-show">Select Show</label>
+            <input type="text" name="show" id="select-show" placeholder="First/Second" />
+          </div>
+          <div class="form-group">
+            <label for="timing">Timing</label>
+            <input type="time" name="timing" id="timing" />
+          </div>
+          <div class="form-group" class="Kewal" >
+            <label for="payment-o">Payment Option</label>
+            
+            <table>
+                <tr>
+                    <thead>
+                        <td>
+                            <input type="radio" name="paymento" id="payment-o" />
+                            &nbsp;&nbsp;&nbsp;&nbsp;UPI
+                        </td>
+                        <td>
+                            <input type="radio" name="paymento" id="payment-o" />
+                            &nbsp;&nbsp;&nbsp;&nbsp;Card
+                        </td>
+                        <td>
+                            <input type="radio" name="paymento" id="payment-o" />
+                            &nbsp;&nbsp;&nbsp;&nbsp;Cash
+                        </td>
+                    </thead>
+                </tr>
+            </table> 
+           </div>
+          <button type="submit" class="btn">Sign Up</button>
+          <p class="bottom-text">
+            By clicking the Sign Up button, you agree to our
+            <a href="#">Terms & Conditions</a> and
+            <a href="#">Privacy Policy</a>
+          </p>
+        </form>
+      </div>
+      <footer>
+        <p>Already watched the movie? <a href="#">Feedback Form</a></p>
+      </footer>
+    </div>
+  </body>
+</html>
